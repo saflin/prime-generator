@@ -23,9 +23,16 @@ Requires Java 1.8 and maven to build this project
 
         mvn clean package
 
-# Implmentation
+# Implementation
 
-This project runs on Spring Boot and uses below
+This project runs on Spring Boot and uses below frame works
+
+1) Spring Boot
+2) Spring Test
+3) JUnit
+4) Mockitto
+5) Hamcrest
+6) SLF-4J
 
 # Running the application
 
