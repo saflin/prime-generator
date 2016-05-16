@@ -44,7 +44,7 @@ This should start the spring boot application.
 
 # Testing the application
 
-Project presently expose below rest endpoints
+Project presently expose below rest endpoints and generates prime numbers up to Integer.MAX_VALUE (2147483647)
 
 1) Get all the supported prime generation algorithms
 
@@ -56,11 +56,11 @@ Project presently expose below rest endpoints
 
 3) Get all prime number upto 'n' using ERATOSTHENES_SIEVE_SEQUENTIAL algorithm
 
-        http://localhost:8080/generator/prime?algorithm=ERATOSTHENES_SIEVE_SEQUENTIAL&ceiling=100 
+        http://localhost:8080/generator/prime?algorithm=ERATOSTHENES_SIEVE_SEQUENTIAL&ceiling=n 
 
 4) Get all prime number upto 'n' using ERATOSTHENES_SIEVE_PARALLEL algorithm
 
-        http://localhost:8080/generator/prime?algorithm=ERATOSTHENES_SIEVE_PARALLEL&ceiling=100 
+        http://localhost:8080/generator/prime?algorithm=ERATOSTHENES_SIEVE_PARALLEL&ceiling=n 
 
 
 
