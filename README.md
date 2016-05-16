@@ -1,8 +1,8 @@
 # prime-generator
 
-A simple restful webservice based prime generator.
+A Spring boot application which generates prime numbers. Application exposes rest endpoint which can be used to generate prime numbers.
 
-Presently support three implemenations
+Supports three prime generation algorithms.
 
 1) Trial by division
 
@@ -23,6 +23,9 @@ Requires Java 1.8 and maven to build this project
 
         mvn clean package
 
+# Implmentation
+
+This project runs on Spring Boot and uses below
 
 # Running the application
 
