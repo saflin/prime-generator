@@ -1,5 +1,7 @@
 package com.icap.test.prime_generator.generator;
 
+import com.icap.test.prime_generator.exception.InvalidParameterException;
+
 import java.math.BigInteger;
 import java.util.List;
 
@@ -15,6 +17,6 @@ public interface PrimeGenerator {
             throw new IllegalArgumentException("ceiling cannot be null");
 
         if(ceiling < 0)
-            throw new IllegalArgumentException("ceiling cannot be -ve");
+            throw new InvalidParameterException("ceiling cannot be -ve", String.valueOf(ceiling), "ceiling should be > 0");
     }
 }

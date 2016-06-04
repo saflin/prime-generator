@@ -1,5 +1,6 @@
 package com.icap.test.prime_generator.generator;
 
+import com.icap.test.prime_generator.exception.InvalidParameterException;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -47,7 +48,7 @@ public abstract class AbstractPrimeGeneratorTest {
         try {
             getUnderTest().generatePrimeNumber(-10);
             fail("expecting exception here.");
-        }catch (IllegalArgumentException ex){
+        }catch (InvalidParameterException ex){
             assertEquals("ceiling cannot be -ve",ex.getMessage());
         }
     }
